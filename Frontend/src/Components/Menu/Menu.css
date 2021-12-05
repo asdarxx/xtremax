@@ -1,0 +1,75 @@
+.menu{
+    width: 16vw;
+    height: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    background-color: rgb(40,44,55); 
+    display: flex;
+    flex-direction: column;
+    padding: 50px 20px 10px 20px;
+}
+
+.filter{
+    margin-bottom: 35px;
+}
+.filter select{
+    color: rgb(122,141,150);
+    background-color: transparent;
+    font-weight: bold;
+    padding: 10px 10px 10px 20px;
+    border : 1px solid rgb(28, 31, 39);
+    outline : none;
+    width: 100%;
+}
+
+.landmark{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.landmark .list{
+    border-top: 1px solid rgb(28, 31, 39);
+    padding: 10px 0px;
+    color: white;
+}
+
+.landmark .list .content{
+    padding: 10px 10px 10px 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.landmark .list p span{
+    text-align: end;
+}
+
+.landmark .list .content:hover{
+    color: yellowgreen;
+    cursor: pointer;
+    background-color: rgb(28, 31, 39);
+}
+
+.drop-menu{
+    margin-top: 0px;
+    list-style-type: none;
+    color: rgb(122,141,150);
+}
+
+.drop-menu li{
+    margin-bottom: 10px;
+}
+
+.drop-menu li:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.selected{
+    background-color: rgb(28, 31, 39);
+    color: yellowgreen;
+}
+

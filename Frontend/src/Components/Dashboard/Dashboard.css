@@ -1,0 +1,35 @@
+.board{
+    width: 8vw;
+    height: 100vh;
+    background-color: rgb(49,53,65);
+    color :rgb(122,141,150);
+}
+
+.board .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10vh;
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgb(37, 40, 49) ;
+    transition: 0.3s;
+}
+
+.board .list span{
+    font-size: 40px;
+}
+.board .list h4{
+    margin-top: 0px;
+}
+
+.board .list:hover{
+    cursor: pointer;
+    background-color: rgb(114,205,210) ;
+    color: white;
+}
+
+.active{
+    background-color: rgb(114,205,210) ;
+    color: white;
+}

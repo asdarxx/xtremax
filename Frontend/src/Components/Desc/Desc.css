@@ -1,0 +1,49 @@
+.desc{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 18vw;
+    height: 87.6vh;
+    background-color:rgb(49,53,65);
+}
+.desc .content{
+    display: flex;
+    flex-direction: column;
+}
+.desc .content img{
+    width: 100%;
+    height: 230px;
+}
+
+.desc .title{
+    color: white;
+    background-color: rgb(114,205,210);
+    padding: 10px 10px 10px 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.desc .detail{
+    padding: 10px 30px 10px 40px;
+    color: rgb(209, 209, 209);
+}
+
+.link, .address{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 0px 10px 0px 0px;
+}
+.address span{
+    color: skyblue;
+    margin-right: 3px;
+    font-size: 17px;
+}
+
+
+.link span{
+    color: yellowgreen;
+    margin-right: 4px;
+    font-size: 17px;
+}
