@@ -19,7 +19,7 @@ function Map() {
         <div style={{width:'100%'}}>
             
             <div className='header'>
-                <div className='title'><h2>TOP-RATED TOURIST ATTRACTIONS IN SINGAPORE</h2></div>
+                <header className='title'><h2>TOP-RATED TOURIST ATTRACTIONS IN SINGAPORE</h2></header>
                 <div className='icons'>
                     <div className='icon'>
                          <RiSettings5Fill/>
