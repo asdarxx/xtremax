@@ -41,11 +41,11 @@ function Gmap() {
             defaultOptions={{ styles: style }}
         >
             {
-                props.marker.map((marker,index) => (
-                    <Marker key={index}  onClick={()=>handleCLick(marker.id,marker.lat, marker.lng,marker.name,marker.pic,marker.place,marker.address,marker.link,marker.desc)}  
-                             position={{ lat:Number(marker.lat), lng: Number(marker.lng) }}
-                             icon={markerIcon}
-                    />  
+                props.marker.map((marker, index) => (
+                    <Marker key={index} onClick={() => handleCLick(marker.id, marker.lat, marker.lng, marker.name, marker.pic, marker.place, marker.address, marker.link, marker.desc)}
+                        position={{ lat: Number(marker.lat), lng: Number(marker.lng) }}
+                        icon={markerIcon}
+                    />
                 ))
             }
 
@@ -63,7 +63,7 @@ function Gmap() {
                 isMarkerShown
                 googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyDoq9UGXD1xeWQTE76a67VgbGi8p3idiBE"
                 loadingElement={<div style={{ height: `100%` }} />}
-                containerElement={<div style={{ height: `87.6vh` }} />}
+                containerElement={<div style={{ height: `calc(100vh - 120px)` }} />}
                 mapElement={<div style={{ height: `100%` }} />}
                 marker={allLocations}
             />

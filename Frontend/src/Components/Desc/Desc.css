@@ -1,9 +1,10 @@
 .desc{
     position: absolute;
+    top:0;
     bottom: 0;
     right: 0;
     width: 18vw;
-    height: 87.6vh;
+    height: 100%;
     background-color:rgb(49,53,65);
 }
 .desc .content{

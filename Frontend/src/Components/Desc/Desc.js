@@ -6,8 +6,8 @@ import { useSelector } from 'react-redux'
 
 
 function Desc() {
-    const landmark = useSelector(state=>state.selected)
-    const {lat,lng,name,pic,place,address,link,desc} = landmark
+    const landmark = useSelector(state => state.selected)
+    const { lat, lng, name, pic, place, address, link, desc } = landmark
     return (
         <div className='desc'>
             <div className='content'>
@@ -21,8 +21,8 @@ function Desc() {
                    which means "seatown" in Javanese. The lion head represents Singapore's original 
                    name-Singapura-meanig "lion city" or "kota singa"
                 </p> */}
-                <div className='address'><span><IoIosPin/></span><div>{address}</div></div>
-                <div className='link'><span><FaGlobeAmericas/></span><div>{link}</div></div>
+                <div className='address'><span><IoIosPin /></span><div>{address}</div></div>
+                <div className='link'><span><FaGlobeAmericas /></span><div>{link}</div></div>
             </div>
         </div>
     )
