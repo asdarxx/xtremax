@@ -67,6 +67,7 @@ function Menu() {
                 <div className='landmark'>
                     {/* map data from local server */}
                     {
+                        AllLocations.length !== 0 ?
                         AllLocations.map((data, index) => (
                             <div onClick={() => handleClick(data.id, data.lat, data.lng, data.name, data.pic, data.place, data.address, data.link, data.desc)} key={index}>
                                 <div className='list'><div className='content' id={data.id}>{data.name}{data.place ? <span onClick={() => setIsOpen(!isOpen)}>{isOpen ? <IoCaretUp /> : <IoCaretDown />}</span> : null}</div></div>
@@ -81,7 +82,7 @@ function Menu() {
                                         </ul> : null
                                 }
                             </div>
-                        ))
+                        )) : <p style={{color:'white'}}>Please run my Json-server!</p>
                     }
                     {/* <div className='list'><div className='content selected'>Merlion</div></div>
                     <div className='list'><div className='content'>Marina Bay Sands <span onClick={()=>setIsOpen(!isOpen)}>{ isOpen ? <IoCaretUp/> : <IoCaretDown/>}</span></div></div>
